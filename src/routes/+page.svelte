@@ -1,2 +1,11 @@
-<h2>main</h2>
-<p>testing cloudflare redirect rules: visit <a href="https://developers.cloudflare.com/rules/url-forwarding/single-redirects/create-dashboard/">https://developers.cloudflare.com/rules/url-forwarding/single-redirects/create-dashboard/</a> to read the documentation</p>
+<script>
+    export let data;
+  </script>
+  
+  <h1>Welcome to SvelteKit</h1>
+  {#if data.word}
+    <p>the word from the server is: {data.word}</p>
+  {:else}
+    <p>no word from the server :(</p>
+  {/if}
+  
